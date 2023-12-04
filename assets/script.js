@@ -1,6 +1,6 @@
 const MIN_SIZE = 4;
 const MAX_SIZE = 64;
-const DEFAULT_SIZE = 32;
+const DEFAULT_SIZE = 16;
 
 const MIN_SPEED = 1;
 const MAX_SPEED = 4;
@@ -159,8 +159,6 @@ $(document).ready(function() {
                 await mergeSort(0, size - 1);
             else if(algo_selected == "Quicksort")
                 await quicksort(0, size - 1);
-            else if(algo_selected == "Heapsort")
-                await heapsort();
             else {
                 $("#no-algo-warning").removeClass('display-none');
                 $("#no-algo-warning").addClass('display-flex');
